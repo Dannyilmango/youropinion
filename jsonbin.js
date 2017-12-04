@@ -181,7 +181,7 @@ class Comments {
     comments.forEach(function (c){
       commentHtml += `
         <div class="comment-container">
-          <a class="comment-delete" data-id="${c.id}"> <img src="nosign.png" class= "imgverysmall"> </a>
+          <a class="comment-delete" data-id="${c.id}"> <img src="nosign.jpg" class= "imgverysmall"> </a>
           <div class="comment-name">${c.name}</div>
           <div class="comment-text">${c.text}</div>
         </div>
