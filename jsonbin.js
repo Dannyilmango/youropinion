@@ -129,7 +129,10 @@ class Comments {
       return false;
     });
     self.viewElm.addEventListener('click', event => {
-      const elm = event.target;
+      let elm = event.target;
+      if (elm && elm.matches("img.imgverysmall")) {
+        elm = elm.parentElement;
+      }  
       if (elm && elm.matches("a.comment-delete")) {
         const id = elm.dataset.id;
         delete elm.dataset.id;
